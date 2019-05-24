@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>OA管理系统</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.5 -->
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="../css/font-awesome.min.css">
+		<!-- Ionicons -->
+		<link rel="stylesheet" href="../css/ionicons.min.css">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="../css/AdminLTE.min.css">
+		<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+		<link rel="stylesheet" href="../css/skin-blue.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<!--
+  BODY TAG OPTIONS:
+  =================
+  Apply one or more of the following classes to get the
+  desired effect
+  |---------------------------------------------------------|
+  | SKINS         | skin-blue                               |
+  |               | skin-black                              |
+  |               | skin-purple                             |
+  |               | skin-yellow                             |
+  |               | skin-red                                |
+  |               | skin-green                              |
+  |---------------------------------------------------------|
+  |LAYOUT OPTIONS | fixed                                   |
+  |               | layout-boxed                            |
+  |               | layout-top-nav                          |
+  |               | sidebar-collapse                        |
+  |               | sidebar-mini                            |
+  |---------------------------------------------------------|
+  -->
+	<body class="hold-transition skin-blue sidebar-mini">
+		<div class="wrapper">
+
+			<!-- Main Header -->
+			<header class="main-header">
+
+				<!-- Logo -->
+				<a href="login.html" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini"><b>千峰</b></span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg"><b>千峰</b>OA管理系统</span>
+				</a>
+
+				<!-- Header Navbar -->
+				<nav class="navbar navbar-static-top" role="navigation">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+					<!-- Navbar Right Menu -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- Control Sidebar Toggle Button -->
+							<li class="dropdown user user-menu">
+								<a href="login.html" class="outt">退出</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- Left side column. contains the logo and sidebar -->
+			<aside class="main-sidebar">
+
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+
+					<!-- Sidebar user panel (optional) -->
+					<div class="user-panel">
+						<div class="pull-left image">
+							<img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
+						</div>
+						<div class="pull-left info">
+							<p>欢迎！<span class="users"></span></p>
+							<!-- Status -->
+							<a href="#"><i class="fa fa-circle text-success"></i>管理员</a>
+						</div>
+					</div>
+
+					<!-- search form (Optional) -->
+					<form action="#" method="get" class="sidebar-form">
+						<div class="input-group">
+							<input type="text" name="q" class="form-control" placeholder="Search...">
+							<span class="input-group-btn">
+								<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+							</span>
+						</div>
+					</form>
+					<!-- /.search form -->
+
+					<!-- Sidebar Menu -->
+					<ul class="sidebar-menu">
+						<li class="header">HEADER</li>
+						<!-- Optionally, you can add icons to the links -->
+						<li><a href="index.html"><i class="fa fa-link"></i> <span>信息总览</span></a></li>
+						<li><a href="02-xueyuanxinxi.html"><i class="fa fa-link"></i> <span>学员信息</span></a></li>
+						<li><a href="03-yewuleixing.html"><i class="fa fa-link"></i> <span>业务信息</span></a></li>
+						<li><a href="04-jiuyetongji.html"><i class="fa fa-link"></i> <span>就业统计</span></a></li>
+						<li><a href="05-shengyuantongji.html"><i class="fa fa-link"></i> <span>生源统计</span></a></li>
+						<li><a href="06-qiyekaozheng.html"><i class="fa fa-link"></i> <span>企业考证</span></a></li>
+						<li class="active"><a href="07-xiaoqihezuo.html"><i class="fa fa-link"></i> <span>校企合作</span></a></li>
+						<li><a href="08-caigouguanli.html"><i class="fa fa-link"></i> <span>采购管理</span></a></li>
+						<li><a href="09-caiwubaobiao.html"><i class="fa fa-link"></i> <span>财务报表</span></a></li>
+						<li><a href="10-quanxianguanli.html"><i class="fa fa-link"></i> <span>权限管理</span></a></li>
+					</ul>
+					<!-- /.sidebar-menu -->
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1>
+						合作企业管理-详情
+						<small>该页面显示数据统计信息</small>
+					</h1>
+					<!--       
+      <p class="bread">
+        <i class="fa fa-plus"></i><a class="addRes" href="javascript:void(0)">增加企业</a>
+      </p>
+      <p class="bread">
+        <i class="fa fa-search"></i> <a href="javascript:void(0)">搜索企业</a>
+       </p> -->
+				</section>
+
+				<!-- Main content -->
+				<section class="content">
+					<!-- 可循环的内容块 -->
+					<div class="box cooper">
+						<!-- 蒙版区域 -->
+						<div class="mengban">
+							<div class="delete">
+								<i class="fa fa-bell-o"></i>
+								<h3>该企业信息将从数据库中清除，是否确认删除？</h3>
+								<button class="query">确认</button>
+								<button class="closed">取消</button>
+							</div>
+						</div>
+
+						<div class="box-header">
+							<h3 class="box-title" style="padding:15px 0 0 15px;"></h3>
+							<div class="box-tools">
+								<ul class="pagination pagination-sm no-margin pull-right">
+									<li class="txtTo" style="padding:15px 15px 0 15px;display: inline-block"><a href="javascript:void(0)">编辑</a></li>
+									<li class="detTo" style="padding:15px 15px 0 15px;display: inline-block"><a href="javascript:void(0)">删除</a></li>
+								</ul>
+
+							</div>
+						</div>
+						<!-- /.box-header -->
+						<div class="box-body cont">
+
+						</div>
+						<!-- /.box-body -->
+					</div>
+					<!-- 可编辑的内容块 -->
+					<div class="mengban2">
+						<div class="cont-text">
+							<h3>编辑合作企业</h3>
+							<ul class="txt-list">
+
+							</ul>
+							<div class="foot">
+								<button class="keep">保存</button>
+								<button class="cancel">取消</button>
+								<button class="deletes">删除</button>
+							</div>
+						</div>
+					</div>
+
+				</section>
+				<!-- /.content -->
+			</div>
+
+			<!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+			<div class="control-sidebar-bg"></div>
+		</div><!-- ./wrapper -->
+
+		<!-- REQUIRED JS SCRIPTS -->
+
+		<!-- jQuery 2.1.4 -->
+		<script src="../js/jQuery-2.1.4.min.js"></script>
+		<!-- Bootstrap 3.3.5 -->
+		<script src="../js/bootstrap.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="../js/app.min.js"></script>
+		<!-- ChartJS 1.0.1 -->
+		<script src="../js/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- FastClick -->
+		<script src="../js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- AdminLTE for demo purposes -->
+		<script src="../js/demo.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Element -->
+		<script src="../js/07-person.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

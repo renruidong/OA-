@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OA管理系统</title>
+	<!-- Tell the browser to be responsive to screen width -->
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<!-- Bootstrap 3.3.5 -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<!-- Ionicons -->
+	<link rel="stylesheet" href="../css/ionicons.min.css">
+	<!-- Theme style -->
+	<link rel="stylesheet" href="../css/AdminLTE.min.css">
+	<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+	<link rel="stylesheet" href="../css/skin-blue.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css" />
+	<link rel="stylesheet" type="text/css" href="../css/02-addtra.css" />
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!--
+  BODY TAG OPTIONS:
+  =================
+  Apply one or more of the following classes to get the
+  desired effect
+  |---------------------------------------------------------|
+  | SKINS         | skin-blue                               |
+  |               | skin-black                              |
+  |               | skin-purple                             |
+  |               | skin-yellow                             |
+  |               | skin-red                                |
+  |               | skin-green                              |
+  |---------------------------------------------------------|
+  |LAYOUT OPTIONS | fixed                                   |
+  |               | layout-boxed                            |
+  |               | layout-top-nav                          |
+  |               | sidebar-collapse                        |
+  |               | sidebar-mini                            |
+  |---------------------------------------------------------|
+  -->
+
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<!-- Main Header -->
+		<header class="main-header">
+
+			<!-- Logo -->
+			<a href="login.html" class="logo">
+				<!-- mini logo for sidebar mini 50x50 pixels -->
+				<span class="logo-mini"><b>千峰</b></span>
+				<!-- logo for regular state and mobile devices -->
+				<span class="logo-lg"><b>千峰</b>OA管理系统</span>
+			</a>
+
+			<!-- Header Navbar -->
+			<nav class="navbar navbar-static-top" role="navigation">
+				<!-- Sidebar toggle button-->
+				<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+					<span class="sr-only">Toggle navigation</span>
+				</a>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<!-- Control Sidebar Toggle Button -->
+						<li class="dropdown user user-menu">
+							<a href="login.html" class="outt">退出</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- Left side column. contains the logo and sidebar -->
+		<aside class="main-sidebar">
+
+			<!-- sidebar: style can be found in sidebar.less -->
+			<section class="sidebar">
+
+				<!-- Sidebar user panel (optional) -->
+				<div class="user-panel">
+					<div class="pull-left image">
+						<img src="../img/user2-160x160.jpg" class="img-circle" alt="User Image">
+					</div>
+					<div class="pull-left info">
+						<p>欢迎！<span class="users"></span></p>
+						<!-- Status -->
+						<a href="#"><i class="fa fa-circle text-success"></i>管理员</a>
+					</div>
+				</div>
+
+				<!-- search form (Optional) -->
+				<form action="#" method="get" class="sidebar-form">
+					<div class="input-group">
+						<input type="text" name="q" class="form-control" placeholder="Search...">
+						<span class="input-group-btn">
+							<button type="submit" name="search" id="search-btn" class="btn btn-flat"><i
+									class="fa fa-search"></i></button>
+						</span>
+					</div>
+				</form>
+				<!-- /.search form -->
+
+				<!-- Sidebar Menu -->
+				<ul class="sidebar-menu">
+					<li class="header">HEADER</li>
+					<!-- Optionally, you can add icons to the links -->
+					<li><a href="index.html"><i class="fa fa-link"></i> <span>信息总览</span></a></li>
+					<li class="active"><a href="02-xueyuanxinxi.html"><i class="fa fa-link"></i> <span>学员信息</span></a></li>
+					<li><a href="03-yewuleixing.html"><i class="fa fa-link"></i> <span>业务信息</span></a></li>
+					<li><a href="04-jiuyetongji.html"><i class="fa fa-link"></i> <span>就业统计</span></a></li>
+					<li><a href="05-shengyuantongji.html"><i class="fa fa-link"></i> <span>生源统计</span></a></li>
+					<li><a href="06-qiyekaozheng.html"><i class="fa fa-link"></i> <span>企业考证</span></a></li>
+					<li><a href="07-xiaoqihezuo.html"><i class="fa fa-link"></i> <span>校企合作</span></a></li>
+					<li><a href="08-caigouguanli.html"><i class="fa fa-link"></i> <span>采购管理</span></a></li>
+					<li><a href="09-caiwubaobiao.html"><i class="fa fa-link"></i> <span>财务报表</span></a></li>
+					<li><a href="10-quanxianguanli.html"><i class="fa fa-link"></i> <span>权限管理</span></a></li>
+				</ul>
+				<!-- /.sidebar-menu -->
+			</section>
+			<!-- /.sidebar -->
+		</aside>
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<!-- Content Header (Page header) -->
+			<section class="content-header">
+				<h1>
+					添加学员
+					<small>该页面显示数据统计信息</small>
+				</h1>
+			</section>
+
+			<!-- Main content -->
+			<section class="content">
+				<!-- 添加学员信息 -->
+				<div class="addTra">
+					<h4>请输入学员详细信息</h4>
+					<div class="addContent">
+						<ul>
+							<li><span>姓名</span><input type="text" class="name" placeholder="姓名"></li>
+							<li><span>性别</span><input type="text" class="gender" placeholder="性别"></li>
+							<li><span>身份证</span><input type="text" class="IDNO" name="IDNO" placeholder="请输入身份证号"></li>
+							<li><span>手机号</span><input type="text" class="mobile" name="mobile" placeholder="请输入手机号"></li>
+							<li><span>微信号</span><input type="text" class="qq" placeholder="请输入微信号"></li>
+							<li><span>地址</span>
+								<div data-toggle="distpicker" class="address">
+									<input type="text" class="address1" placeholder="家庭地址">
+								</div>
+							</li>
+							<li><span>备注</span><input type="text" class="remark" placeholder="请输入备注信息"></li>
+						</ul>
+					</div>
+					<div class="add-foot">
+						<button class="keepAll">保存学员信息</button>
+						<button class="canceAll">取消</button>
+					</div>
+				</div>
+				<!-- 转介绍统计弹出框 -->
+				<!-- <div class="mengban4">
+						<div class="jieshao">
+							<div class="jieshao-top">
+								<h4>选择经谁介绍</h4>
+								<input type="text" placeholder="搜索学员"><i class="fa fa-search searchBox"></i>
+							</div>
+							<table class="table detailTable">
+								<tbody>
+									<tr>
+										<th>选择</th>
+										<th>ID</th>
+										<th>姓名</th>
+										<th>性别</th>
+										<th>班级</th>
+										<th>转介绍人数</th>
+									</tr>
+								</tbody>
+							</table>
+							<div class="jieshao-foot">
+								<button class="keep3">保存</button>
+								<button class="cance3">取消</button>
+							</div>
+						</div>
+					</div> -->
+				<!-- 班级号弹出框 -->
+				<!-- <div class="mengban5">
+						<div class="jieshao">
+							<div class="jieshao-top">
+								<h4>选择班级</h4>
+							</div>
+							<table class="table detailTable">
+								<tbody>
+									<tr>
+										<th>选择</th>
+										<th>班级号</th>
+										<th>班级名称</th>
+										<th>专业</th>
+										<th>应缴学费</th>
+										<th>学制</th>
+										<th>开班时间</th>
+										<th>毕业时间</th>
+									</tr>
+								</tbody>
+							</table>
+							<div class="jieshao-foot">
+								<button class="keep4">保存</button>
+								<button class="cance4">取消</button>
+							</div>
+						</div>
+					</div> -->
+			</section>
+			<!-- /.content -->
+		</div>
+
+
+		<!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+		<div class="control-sidebar-bg"></div>
+	</div><!-- ./wrapper -->
+
+	<!-- REQUIRED JS SCRIPTS -->
+
+	<!-- jQuery 2.1.4 -->
+	<script src="../js/jQuery-2.1.4.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- AdminLTE App -->
+	<script src="../js/app.min.js"></script>
+	<!-- ChartJS 1.0.1 -->
+	<script src="../js/Chart.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- FastClick -->
+	<script src="../js/fastclick.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- AdminLTE for demo purposes -->
+	<script src="../js/demo.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Element -->
+	<script src="../js/02-addtra.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		let save = document.querySelector(".keepAll")
+		let cac = document.querySelector('.canceAll')
+		save.onclick = function () {
+					$.ajax({
+				type:"post",
+				url:"http://www.jiangguangcan.top/stuinfo1",
+				async:true,
+				dataType:'json',
+				contentType:"application/json;charset=utf-8",
+				data:JSON.stringify({
+					"name":$('.name').val(),
+					"sex":$(".active-sex").val(),
+					"id_card":$(".IDNO").val(),
+					"local":$(".address").val(),
+					"wechat":$(".qq").val()
+						// "wechat": 10077,
+			      // "age": 88,
+			      // "name": 123456,
+			      // "local": "10077",
+			      // "id_card": 12000
+				}),
+				success:function(data){
+					console.log(data)
+					if(data.code=="200"){
+						alert("保存成功")
+						window.location.href=document.referrer;
+					}else{
+						alert("保存失败请重新尝试")
+					}
+
+				}
+			})
+		}
+		//添加
+	// 	$('.keepAll').click(function(){
+  //   $('#rootwizard').slideToggle()
+  //   $.ajax({
+	// 			type:"post",
+	// 			url:"http://www.Jhaobo.work/stuinfo1/",
+	// 			dataType:'json',
+	// 			contentType:"application/json;charset=utf-8",
+	// 			data:JSON.stringify({
+  //                   "name":$('.xm').val(),
+  //                   "sex":$('.xb').val(),
+  //                   "id_card":$('.sfz').val(),
+  //                   "local":$('.dz').val(),
+  //                   "wechat":$('.wxh').val(),
+  //                   "work":$('.ywlx').val() 
+	// 			}),				
+	// 			success:function(res){
+	// 				console.log('添加成功')
+  //                   $('input').val('')
+	// 		cx()
+	// 			}
+					
+	// 		});
+	// })
+
+		cac.onclick = function () {
+			window.location.href = '02-xueyuanxinxi.html'
+		}
+
+	</script>
+</body>
+
+</html>
